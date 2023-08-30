@@ -1,6 +1,6 @@
 
-import { Principal, Record } from "azle";
+import { Record } from "azle";
 export type User = Record<{
     username: string;
-    registrationDate: Date;
+    registrationDate: string;
 }>;

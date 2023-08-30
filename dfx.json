@@ -1,13 +1,18 @@
 {
     "canisters": {
-        "dao": {
+        "dao_backend": {
             "type": "custom",
-            "build": "npx azle dao",
-            "root": "src",
-            "ts": "src/index.ts",
-            "candid": "src/index.did",
-            "wasm": ".azle/dao/dao.wasm.gz"
+            "build": "npx azle dao_backend",
+            "root": "src/",
+            "ts": "src/dao_backend/index.ts",
+            "candid": "src/dao_backend/index.did",
+            "wasm": ".azle/dao_backend/dao_backend.wasm.gz"
+        },
+        "dao_frontend": {
+            "type": "assets",
+            "source": [
+                "src/dao_frontend/"
+            ]
         }
     }
 }
-

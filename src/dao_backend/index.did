@@ -1,0 +1,8 @@
+type User = record { username : text; registrationDate : text };
+service : () -> {
+  addDAOMember : (principal, text) -> (opt User);
+  getDAOMembers : () -> (vec User) query;
+  getMemberByPrincipal : (principal) -> (opt User) query;
+  getMyProfile : (principal) -> (opt User) query;
+  whoami : () -> (principal) query;
+}

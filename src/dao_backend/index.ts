@@ -31,7 +31,7 @@ export function addDAOMember(p: Principal, usnername: string): Opt<User> {
         return ic.trap(`username exceeds 32 character limit with length ${p.toString().length}`);
     };
 
-    const member: User = { username: p.toText(), registrationDate: new Date };
+    const member: User = { username: p.toText(), registrationDate: new Date().toString() };
     DAO_MEMBERS.insert(p, member);
 
     return Opt.Some(member);

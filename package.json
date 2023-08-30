@@ -8,6 +8,9 @@
         "canister_uninstall": "dfx canister uninstall-code dao"
     },
     "dependencies": {
+        "@dfinity/agent": "^0.19.2",
+        "@dfinity/auth-client": "^0.19.2",
+        "@dfinity/candid": "^0.19.2",
         "azle": "^0.17.1"
     }
 }
