@@ -3,3 +3,4 @@ import { AuthClient } from '@dfinity/auth-client';
 import { login } from "./login";
 
 const log = login();
+
