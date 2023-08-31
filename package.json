@@ -1,5 +1,6 @@
 {
     "scripts": {
+        "build": "tsc src/dao_frontend/index.ts",
         "dfx_install": "DFX_VERSION=0.14.2 sh -ci \"$(curl -fsSL https://sdk.dfinity.org/install.sh)\"",
         "replica_start": "dfx start --background",
         "replica_stop": "dfx stop",
@@ -11,6 +12,7 @@
         "@dfinity/agent": "^0.19.2",
         "@dfinity/auth-client": "^0.19.2",
         "@dfinity/candid": "^0.19.2",
-        "azle": "^0.17.1"
+        "azle": "^0.17.1",
+        "typescript": "^5.2.2"
     }
 }

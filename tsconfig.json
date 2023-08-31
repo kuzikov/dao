@@ -13,6 +13,7 @@
             "dom"
         ],
         "module": "ESNEXT",
+        "outDir": "src/dao_frontend",
         "moduleResolution": "node",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
